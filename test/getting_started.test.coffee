@@ -1,3 +1,5 @@
+should = require 'should'
+
 {Task, TaskList} = require '../src/getting_started'
 
 describe 'Task instance', ->
