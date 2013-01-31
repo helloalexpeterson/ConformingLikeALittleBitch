@@ -1,4 +1,4 @@
-should = require 'should'
+assert = require 'assert'
 
 {Task, TaskList} = require '../src/getting_started'
 
@@ -6,9 +6,9 @@ describe 'Task instance', ->
    task1 = task2 = null
    it 'should have a name', ->
       task1 = new Task 'feed the cat'
-      task1.name.should.equal 'feed the cat'
+      assert.equal task1.name, 'feed the cat'
    it 'should be initially incomplete', ->
-      task1.status.should.equal 'incomplete'
+      assert.equal task1.status, 'incomplete'
    it 'should be able to be completed', ->
-      task1.complete().should.be.true
-      task1.status.should.equal 'complete'
+      assert.ok task1.complete()
+      assert.equal task1.status, 'complete'
