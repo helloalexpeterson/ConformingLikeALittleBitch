@@ -5,10 +5,14 @@
 ,    "version" : "1.0.0"
    
 ,          "engines" :{"node":"~0.8.0"}
-,  "devDependencies" :{"mocha"                  : " ~ 1. 8. 1"                                    }
+,     "dependencies" :{"coffee-script"          : " ~ 1. 4. 0"                                    }
+,  "devDependencies" :{"docco"                  : " ~ 0. 4. 0"
+                     , "mocha"                  : " ~ 1. 8. 1"
+                     , "should"                 : " ~ 1. 2. 1"
+                     , "istanbul"               : ">= 0. 1. 29"                                   }
 
 ,   "testling" :{
-          "files" : "test/*.js"
+          "files" : "test/*.coffee"
      ,  "harness" : "mocha-bdd"
      , "browsers" :{"ie":      [ 6, 7, 8, 9, 10 ]
                   , "firefox": [ 3, 3.5, 4, 5, 10, 17 ]
