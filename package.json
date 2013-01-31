@@ -12,7 +12,7 @@
                      , "istanbul"               : ">= 0. 1. 29"                                   }
 
 ,   "testling" :{
-          "files" : "test/*.js"
+          "files" : "test/*.coffee"
      ,  "harness" : "mocha-bdd"
      , "browsers" :{"ie":      [ 6, 7, 8, 9, 10 ]
                   , "firefox": [ 3, 3.5, 4, 5, 10, 17 ]
